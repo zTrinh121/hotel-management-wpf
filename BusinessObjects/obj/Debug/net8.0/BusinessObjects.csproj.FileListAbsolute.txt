@@ -1,0 +1,14 @@
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\bin\Debug\net8.0\BusinessObjects.deps.json
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\bin\Debug\net8.0\BusinessObjects.runtimeconfig.json
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\bin\Debug\net8.0\BusinessObjects.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\bin\Debug\net8.0\BusinessObjects.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.AssemblyReference.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfoInputs.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfo.cs
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.CoreCompileInputs.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\refint\BusinessObjects.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll

@@ -1,0 +1,17 @@
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\BusinessObjects.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\DataAccessLayer.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\BusinessObjects.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\ref\Repositories.dll

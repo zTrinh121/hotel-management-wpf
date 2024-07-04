@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C87D2A24-84AD-45C9-B067-8D94318EFB95}|DataAccessLayer\\DataAccessLayer.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\dataaccesslayer\\bookingreservationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87D2A24-84AD-45C9-B067-8D94318EFB95}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\bookingreservationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\viewmodels\\bookingreservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\viewmodels\\bookingreservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\views\\bookingresevationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\views\\bookingresevationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87D2A24-84AD-45C9-B067-8D94318EFB95}|DataAccessLayer\\DataAccessLayer.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\dataaccesslayer\\bookingdetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87D2A24-84AD-45C9-B067-8D94318EFB95}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\bookingdetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\views\\roommanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\views\\roommanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\views\\customermanagemetnview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\views\\customermanagemetnview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\views\\bookingresevationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\views\\bookingresevationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|c:\\fpt_uni\\su24\\prn212\\code\\nguyenthimaitrinh_de180146_assigment\\wpfapp\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F26AF776-6184-4F15-A626-D469537B5A39}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingReservationViewModel.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\ViewModels\\BookingReservationViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp\\ViewModels\\BookingReservationViewModel.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\ViewModels\\BookingReservationViewModel.cs",
+              "RelativeToolTip": "WpfApp\\ViewModels\\BookingReservationViewModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAArwBoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:20:22.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingReservationDAO.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\DataAccessLayer\\BookingReservationDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BookingReservationDAO.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\DataAccessLayer\\BookingReservationDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\BookingReservationDAO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:09:40.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingResevationView.xaml.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_DE180146_Assigment\\WpfApp\\Views\\BookingResevationView.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\Views\\BookingResevationView.xaml.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_DE180146_Assigment\\WpfApp\\Views\\BookingResevationView.xaml.cs",
+              "RelativeToolTip": "WpfApp\\Views\\BookingResevationView.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAxwBEAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:15:21.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp\\AdminWindow.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:26:17.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingDetailDAO.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\DataAccessLayer\\BookingDetailDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BookingDetailDAO.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\DataAccessLayer\\BookingDetailDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\BookingDetailDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:03:29.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerManagemetnView.xaml.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\CustomerManagemetnView.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\Views\\CustomerManagemetnView.xaml.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\CustomerManagemetnView.xaml.cs",
+              "RelativeToolTip": "WpfApp\\Views\\CustomerManagemetnView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:17:30.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomManagement.xaml.cs",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\RoomManagement.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\Views\\RoomManagement.xaml.cs",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\RoomManagement.xaml.cs",
+              "RelativeToolTip": "WpfApp\\Views\\RoomManagement.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:16:58.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingResevationView.xaml",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\BookingResevationView.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\Views\\BookingResevationView.xaml",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\Views\\BookingResevationView.xaml",
+              "RelativeToolTip": "WpfApp\\Views\\BookingResevationView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T14:15:16.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\AdminWindow.xaml",
+              "ToolTip": "C:\\FPT_UNI\\SU24\\PRN212\\Code\\NguyenThiMaiTrinh_De180146_Assigment\\WpfApp\\AdminWindow.xaml",
+              "RelativeToolTip": "WpfApp\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T13:56:57.221Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
