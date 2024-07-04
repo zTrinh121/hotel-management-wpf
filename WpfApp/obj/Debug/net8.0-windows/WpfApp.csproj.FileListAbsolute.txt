@@ -99,3 +99,8 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_De180146_Assigment\WpfApp\bin\Debu
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_De180146_Assigment\WpfApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\BookingResevationView.g.cs
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\BookingResevationView.baml
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\WpfApp.sourcelink.json
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\PersonalProfile.g.cs
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\PersonalReport.g.cs
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\PersonalProfile.baml
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\obj\Debug\net8.0-windows\Views\PersonalReport.baml

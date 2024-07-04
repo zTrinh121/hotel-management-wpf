@@ -18,7 +18,7 @@ namespace Repositories
 
         public List<BookingReservation> GetAllReport(DateOnly startDate, DateOnly endDate) => BookingReservationDAO.GetAllReport(startDate, endDate);
 
-        public BookingReservation GetBookingReservationByCustomerId(int id) => BookingReservationDAO.GetBookingReservationByCustomerId(id);
+        public List<BookingReservation> GetBookingReservationByCustomerId(int id) => BookingReservationDAO.GetBookingReservationByCustomerId(id);
 
         public List<BookingReservation> GetPersonaleeReport(DateOnly startDate, DateOnly endDate) => BookingReservationDAO.GetPersonaleeReport(startDate, endDate);
 

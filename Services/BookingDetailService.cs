@@ -1,25 +1,26 @@
 ﻿using BusinessObjects;
+using Repositories;
 
 namespace Sevices
 {
     public class BookingDetailService : IBookingDetailService
     {
-        private readonly IBookingDetailService bookingDetailService;
+        private readonly IBookingDetailRepository bookingDetailRepository;
 
         public BookingDetailService()
         {
-            bookingDetailService = new BookingDetailService();
+            bookingDetailRepository = new BookingDetailRepository();
         }
-        public void Add(BookingDetail bookingDetail) => bookingDetailService.Add(bookingDetail);
+        public void Add(BookingDetail bookingDetail) => bookingDetailRepository.Add(bookingDetail);
 
-        public void Delete(int id) => bookingDetailService.Delete(id);
+        public void Delete(int id) => bookingDetailRepository.Delete(id);
 
-        public List<BookingDetail> GetAll() => bookingDetailService.GetAll();
+        public List<BookingDetail> GetAll() => bookingDetailRepository.GetAll();
 
-        public BookingDetail GetBookingDetailByBookingReservationId(int id) => bookingDetailService.GetBookingDetailByBookingReservationId(id);
+        public BookingDetail GetBookingDetailByBookingReservationId(int id) => bookingDetailRepository.GetBookingDetailByBookingReservationId(id);
 
-        public List<BookingDetail> GetBookingDetailByRoomId(int id) => bookingDetailService.GetBookingDetailByRoomId(id);
+        public List<BookingDetail> GetBookingDetailByRoomId(int id) => bookingDetailRepository.GetBookingDetailByRoomId(id);
 
-        public void Update(BookingDetail bookingDetail) => bookingDetailService.Update(bookingDetail);
+        public void Update(BookingDetail bookingDetail) => bookingDetailRepository.Update(bookingDetail);
     }
 }

@@ -26,13 +26,13 @@ namespace DataAccessLayer
             return listBookingReservation;
         }
 
-        public static BookingReservation GetBookingReservationByCustomerId(int id)
+        public static List<BookingReservation> GetBookingReservationByCustomerId(int id)
         {
-            var bookingReservation = new BookingReservation();
+            var bookingReservation = new List<BookingReservation>();
             try
             {
                 using var context = new FuminiHotelManagementContext();
-                bookingReservation = context.BookingReservations.FirstOrDefault(r => r.CustomerId == id);
+                bookingReservation = context.BookingReservations.Where(r => r.CustomerId == id).ToList();
             }
             catch (Exception ex)
             {

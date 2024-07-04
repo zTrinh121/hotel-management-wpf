@@ -23,14 +23,38 @@ namespace WpfApp.ViewModels
         public ObservableCollection<string> Statuses { get; set; }
 
 
-        public ReportViewModel(IBookingReservationService bookingReservationService, IBookingDetailService bookingDetailService)
+        public ReportViewModel(IBookingReservationService bookingReservationService, IBookingDetailService bookingDetailService, int CustomerId)
         {
             this.bookingDetailService = bookingDetailService;
             this.bookingReservationService = bookingReservationService;
-            //LoadRoomReservation();
+            LoadBookingReservation(CustomerId);
             currentBookingReservation = new BookingReservation();
             Statuses = new ObservableCollection<string> { "Success", "Fail" };
 
+        }
+
+        public ObservableCollection<BookingReservation> BookingReservations
+        {
+            get
+            {
+                if (bookingReservations == null)
+                {
+                    bookingReservations = new ObservableCollection<BookingReservation>(bookingReservationService.GetAll());
+                }
+                return bookingReservations;
+            }
+            set
+            {
+                bookingReservations = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+
+        public List<BookingReservation> LoadBookingReservation(int CustomerId)
+        {
+            return bookingReservationService.GetBookingReservationByCustomerId(CustomerId);
         }
 
         public BookingReservation CurrentBookingReservation

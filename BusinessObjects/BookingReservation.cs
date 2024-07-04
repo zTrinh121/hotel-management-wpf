@@ -18,4 +18,16 @@ public partial class BookingReservation
     public virtual ICollection<BookingDetail> BookingDetails { get; set; } = new List<BookingDetail>();
 
     public virtual Customer Customer { get; set; } = null!;
+
+    public BookingReservation(DateOnly? BookingDate, decimal? TotalPrice, Customer Customer, byte? ookingStatus)
+    {
+        this.BookingDate = BookingDate;
+        this.TotalPrice = TotalPrice;
+        this.Customer = Customer;
+        this.BookingStatus = ookingStatus;
+    }
+
+    public BookingReservation()
+    {
+    }
 }

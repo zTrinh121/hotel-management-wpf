@@ -7,8 +7,43 @@
         mc:Ignorable="d"
          xmlns:viewmodels="clr-namespace:WpfApp.ViewModels"
         xmlns:views="clr-namespace:WpfApp.Views"
-        Title="CustomerWindow" Height="450" Width="800">
+        Title="CustomerWindow" Height="620" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Name="customerViewTemplate" DataType="{x:Type viewmodels:PersonalProfileViewModel}">
+            <views:PersonalProfile DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="bookingViewTemplate" DataType="{x:Type viewmodels:ReportViewModel}">
+            <views:PersonalReport DataContext="{Binding}"/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5">
+            <StackPanel>
+                <Button Content="My Account" 
+                        Click="AccountManagement_Clicked"/>
+                <Button Content="Booking History " 
+                        Click="Booking_Clicked"/>
+            </StackPanel>
+        </DockPanel>
+
+        <TextBlock Height="115" FontSize="32" RenderTransformOrigin="0.244,0.808" Grid.Column="1" Grid.ColumnSpan="4" Margin="80,0,36,58" Grid.RowSpan="2" Grid.Row="1"><Run Text="Welcome back to Your Window"/></TextBlock>
+        <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="5" Content="{Binding}"/>
     </Grid>
 </Window>
+

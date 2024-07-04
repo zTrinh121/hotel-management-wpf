@@ -13,3 +13,4 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\DataAccessLayer
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

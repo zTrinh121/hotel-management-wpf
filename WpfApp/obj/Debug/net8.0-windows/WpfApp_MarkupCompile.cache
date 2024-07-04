@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\WpfApp\App.xaml
-8650755373
+10-2000191223
 
-17-378351265
+20-1519424162
 250-1650202133
-AdminWindow.xaml;CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;MessageBoxCustom.xaml;Views\BookingResevationView.xaml;Views\CustomerManagemetnView.xaml;Views\RoomManagement.xaml;
+AdminWindow.xaml;CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;MessageBoxCustom.xaml;Views\BookingResevationView.xaml;Views\CustomerManagemetnView.xaml;Views\PersonalProfile.xaml;Views\PersonalReport.xaml;Views\RoomManagement.xaml;
 
 False
 

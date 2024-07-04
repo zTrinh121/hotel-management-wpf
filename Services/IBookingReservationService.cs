@@ -10,7 +10,7 @@ namespace Sevices
     public interface IBookingReservationService
     {
         List<BookingReservation> GetAll();
-        BookingReservation GetBookingReservationByCustomerId(int id);
+        List<BookingReservation> GetBookingReservationByCustomerId(int id);
         void Add(BookingReservation bookingReservation);
         void Update(BookingReservation bookingReservation);
         void Delete(int id);

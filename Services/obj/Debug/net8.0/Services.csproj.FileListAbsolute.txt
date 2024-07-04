@@ -17,3 +17,4 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\De
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\refint\Services.dll
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.pdb
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\ref\Services.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.sourcelink.json

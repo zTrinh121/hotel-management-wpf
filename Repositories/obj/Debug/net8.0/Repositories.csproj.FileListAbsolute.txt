@@ -15,3 +15,4 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\ob
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\refint\Repositories.dll
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.pdb
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json

@@ -12,3 +12,4 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\BusinessObjects\obj\Debug\net8.0\BusinessObjects.sourcelink.json
