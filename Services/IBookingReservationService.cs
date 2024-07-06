@@ -14,5 +14,6 @@ namespace Sevices
         void Add(BookingReservation bookingReservation);
         void Update(BookingReservation bookingReservation);
         void Delete(int id);
+        BookingReservation GetBookingReservationById(int id);
     }
 }

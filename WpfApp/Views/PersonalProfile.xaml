@@ -92,7 +92,7 @@
                    Grid.Row="7" Grid.ColumnSpan="2" Foreground="Black"/>
             <TextBox x:Name="txtCustomerPassword" Margin ="4,4,4,4"  
                 Grid.Column="2" Grid.Row="7"  
-                Text="{Binding CurrentCustomer.Password}"
+               Text="{Binding CurrentCustomer.Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                 TextWrapping="Wrap" Grid.ColumnSpan="2" Foreground="Black" />
 
             <Button x:Name="btnUpdate" 

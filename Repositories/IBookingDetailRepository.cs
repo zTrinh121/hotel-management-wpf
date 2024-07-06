@@ -14,6 +14,6 @@ namespace Repositories
         List<BookingDetail> GetBookingDetailByRoomId(int id);
         void Add(BookingDetail bookingDetail);
         void Update(BookingDetail bookingDetail);
-        void Delete(int id);
+        void Delete(int bookingReservationId, int roomId);
     }
 }

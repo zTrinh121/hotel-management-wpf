@@ -28,13 +28,13 @@ namespace WpfApp
 
         private void Report_Clicked(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new AdminReportViewModel(new BookingReservationService());
         }
         
 
         private void Booking_Clicked(object sender, RoutedEventArgs e)
         {
-            DataContext = new BookingReservationViewModel(new BookingReservationService(), new BookingDetailService());
+            DataContext = new BookingReservationViewModel(new BookingReservationService(), new BookingDetailService(), new CustomerService(), new RoomInfomationService());
         }
     }
 

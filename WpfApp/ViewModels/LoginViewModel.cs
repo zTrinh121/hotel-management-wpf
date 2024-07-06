@@ -52,11 +52,17 @@ namespace WpfApp.ViewModels
                     adminWindow.Show();
                 }
                 else
-                {
-                    //var customerWindown = new CustomerWindow(user.CustomerId);
-                    var customerWindown = new CustomerWindow();
-
-                    customerWindown.Show();
+                {   if(user.CustomerStatus == 2)
+                    {
+                        AddError(nameof(Email), "Your account has been deleted. Please contact with adminitrastion");
+                    }
+                    else
+                    {
+                        //var customerWindown = new CustomerWindow(user.CustomerId);
+                        var customerWindown = new CustomerWindow();
+                        customerWindown.Show();
+                    }
+                    
                 }
             }
             else

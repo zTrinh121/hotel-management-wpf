@@ -28,6 +28,7 @@ namespace WpfApp.Views
         {
             InitializeComponent();
             viewModel = new PersonalProfileViewModel(new CustomerService(), 18);
+            DataContext = viewModel;
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)

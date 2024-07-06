@@ -2,11 +2,13 @@
 using Sevices;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using WpfApp.ViewModels;
 
 namespace WpfApp.Views
@@ -22,6 +24,8 @@ namespace WpfApp.Views
             InitializeComponent();
             viewModel = new CustomerManagementViewModel(new CustomerService());
             DataContext = viewModel;
+            viewModel.FilteredCustomers = new ObservableCollection<Customer>(viewModel.Customers);
+            dgData.SetBinding(DataGrid.ItemsSourceProperty, new Binding("FilteredCustomers"));
         }
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
@@ -92,6 +96,12 @@ namespace WpfApp.Views
             {
                 viewModel.CurrentCustomer = selectedCustomer;
             }
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.SearchQuery = txtSearch.Text;
+            viewModel.ApplySearch();
         }
     }
 }

@@ -27,5 +27,6 @@ namespace Services
         public List<BookingReservation> GetBookingReservationByCustomerId(int id) => bookingReservationRepository.GetBookingReservationByCustomerId(id);
 
         public void Update(BookingReservation bookingReservation) => bookingReservationRepository.Update(bookingReservation);
+        public BookingReservation GetBookingReservationById(int id) => bookingReservationRepository.GetBookingReservationById(id);
     }
 }

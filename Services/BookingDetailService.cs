@@ -13,7 +13,7 @@ namespace Sevices
         }
         public void Add(BookingDetail bookingDetail) => bookingDetailRepository.Add(bookingDetail);
 
-        public void Delete(int id) => bookingDetailRepository.Delete(id);
+        public void Delete(int bookingReservationId, int roomId) => bookingDetailRepository.Delete(bookingReservationId, roomId);
 
         public List<BookingDetail> GetAll() => bookingDetailRepository.GetAll();
 

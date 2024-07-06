@@ -23,5 +23,6 @@ namespace Repositories
         public List<BookingReservation> GetPersonaleeReport(DateOnly startDate, DateOnly endDate) => BookingReservationDAO.GetPersonaleeReport(startDate, endDate);
 
         public void Update(BookingReservation bookingReservation) => BookingReservationDAO.Update(bookingReservation);
+        public BookingReservation GetBookingReservationById(int id) => BookingReservationDAO.GetBookingReservationById(id);
     }
 }

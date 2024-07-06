@@ -16,6 +16,9 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\AdminReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\BookingResevationView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MessageBoxCustom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminReportView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\BookingResevationView.xaml">

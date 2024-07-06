@@ -1,8 +1,10 @@
 ﻿
 using BusinessObjects;
 using Sevices;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using WpfApp.ViewModels;
 
 namespace WpfApp.Views
@@ -18,6 +20,8 @@ namespace WpfApp.Views
             InitializeComponent();
             viewModel = new RoomManagementViewModel(new RoomInfomationService(), new RoomTypeService());
             DataContext = viewModel;
+            dgData.SetBinding(DataGrid.ItemsSourceProperty, new Binding("FilteredRoomInformations"));
+            viewModel.FilteredRoomInformations = new ObservableCollection<RoomInformation>(viewModel.RoomInformations);
         }
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
@@ -89,6 +93,12 @@ namespace WpfApp.Views
             {
                 viewModel.CurrentRoomInformation = selectedRoomInformation;
             }
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.SearchQuery = txtSearch.Text;
+            viewModel.ApplySearch();
         }
     }
 }

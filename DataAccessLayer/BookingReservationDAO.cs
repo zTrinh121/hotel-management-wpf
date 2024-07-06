@@ -41,6 +41,21 @@ namespace DataAccessLayer
             return bookingReservation;
         }
 
+        public static BookingReservation GetBookingReservationById(int id)
+        {
+            var bookingReservation = new BookingReservation();
+            try
+            {
+                using var context = new FuminiHotelManagementContext();
+                bookingReservation = context.BookingReservations.FirstOrDefault(r => r.BookingReservationId == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return bookingReservation;
+        }
+
         public static void Add(BookingReservation bookingReservation)
         {
             try
@@ -110,6 +125,8 @@ namespace DataAccessLayer
                 return reportData;
             }
         }
+
+
 
     }
 

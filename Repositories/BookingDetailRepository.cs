@@ -12,7 +12,7 @@ namespace Repositories
     {
         public void Add(BookingDetail bookingDetail) => BookingDetailDAO.Add(bookingDetail);
 
-        public void Delete(int id) => BookingDetailDAO.Delete(id);
+        public void Delete(int bookingReservationId, int roomId) => BookingDetailDAO.Delete(bookingReservationId, roomId);
 
         public List<BookingDetail> GetAll() => BookingDetailDAO.GetAll();
 

@@ -28,7 +28,9 @@ namespace WpfApp.ViewModels
 
         public Customer LoadCustomer(int CustomerId)
         {
-            return customerService.GetCustomerById(CustomerId);
+            var customer = customerService.GetCustomerById(CustomerId);
+            CurrentCustomer = customer;
+            return customer;
         }
 
         public Customer CurrentCustomer
@@ -61,7 +63,8 @@ namespace WpfApp.ViewModels
         public void UpdateCustomer()
         {
             customerService.Update(currentCustomer);
-            
+            OnPropertyChanged(nameof(CurrentCustomer));
+
         }
 
         public void DeleteCustomer()
@@ -73,7 +76,6 @@ namespace WpfApp.ViewModels
         public void ResetInput()
         {
             currentCustomer = new Customer();
-            OnPropertyChanged(nameof(CurrentCustomer));
         }
 
         //NotifyPropertyChanged

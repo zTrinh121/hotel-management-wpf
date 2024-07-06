@@ -12,9 +12,9 @@ C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\De
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.sourcelink.json
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.csproj.Up2Date
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.dll
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\refint\Services.dll
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.pdb
 C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\ref\Services.dll
-C:\FPT_UNI\SU24\PRN212\Code\NguyenThiMaiTrinh_DE180146_Assigment\Services\obj\Debug\net8.0\Services.sourcelink.json

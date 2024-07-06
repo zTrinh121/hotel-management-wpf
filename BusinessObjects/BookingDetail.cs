@@ -18,4 +18,15 @@ public partial class BookingDetail
     public virtual BookingReservation BookingReservation { get; set; } = null!;
 
     public virtual RoomInformation Room { get; set; } = null!;
+
+    public BookingDetail()
+    {
+
+    }
+
+    public BookingDetail(DateOnly StartDate, DateOnly EndDate)
+    {
+        this.StartDate = StartDate;
+        this.EndDate = EndDate;
+    }
 }

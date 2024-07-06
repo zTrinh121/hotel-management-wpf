@@ -15,7 +15,11 @@ namespace WpfApp.ViewModels
         private readonly IRoomTypeService roomTypeService;
         private ObservableCollection<RoomInformation> roomInformations;
         private ObservableCollection<RoomType> roomTypes;
+        private ObservableCollection<RoomInformation> filteredRoomInformations;
+        private string searchQuery;
         public ObservableCollection<string> Statuses { get; set; }
+
+
 
         public RoomManagementViewModel(IRoomInfomationService roomInfomationService, IRoomTypeService roomTypeService)
         {
@@ -63,6 +67,7 @@ namespace WpfApp.ViewModels
             }
         }
 
+
         public void LoadRoomInformations()
         {
             RoomInformations = new ObservableCollection<RoomInformation>(roomInfomationService.GetAll());
@@ -99,6 +104,44 @@ namespace WpfApp.ViewModels
             LoadRoomInformations();
             ResetInput();
         }
+        
+        public ObservableCollection<RoomInformation> FilteredRoomInformations
+        {
+            get => filteredRoomInformations;
+            set
+            {
+                filteredRoomInformations = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SearchQuery
+        {
+            get => searchQuery;
+            set
+            {
+                searchQuery = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public void ApplySearch()
+        {
+            if (string.IsNullOrWhiteSpace(SearchQuery))
+            {
+                FilteredRoomInformations = new ObservableCollection<RoomInformation>(RoomInformations);
+                return;
+            }
+
+            var query = RoomInformations.Where(r =>
+                r.RoomNumber.Contains(SearchQuery, StringComparison.OrdinalIgnoreCase) ||
+                r.RoomPricePerDay.ToString().Contains(SearchQuery) ||
+                r.RoomType.RoomTypeName.Contains(SearchQuery, StringComparison.OrdinalIgnoreCase)
+            );
+
+            FilteredRoomInformations = new ObservableCollection<RoomInformation>(query.ToList());
+        }
+
 
         public void UpdateRoomInfomation()
         {

@@ -11,6 +11,8 @@ namespace WpfApp.ViewModels
         private Customer currentCustomer;
         private readonly ICustomerService customerService;
         private ObservableCollection<Customer> customers;
+        private string searchQuery;
+        private ObservableCollection<Customer> filteredCustomers;
         public ObservableCollection<string> Statuses { get; set; }
 
         public CustomerManagementViewModel(ICustomerService customerService)
@@ -33,6 +35,42 @@ namespace WpfApp.ViewModels
 
         public void LoadCustomers() => Customers = new ObservableCollection<Customer>(customerService.GetAll());
 
+        public string SearchQuery
+        {
+            get => searchQuery;
+            set
+            {
+                searchQuery = value;
+                OnPropertyChanged();
+            }
+        }
+        public ObservableCollection<Customer> FilteredCustomers
+        {
+            get => filteredCustomers;
+            set
+            {
+                filteredCustomers = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public void ApplySearch()
+        {
+            if (string.IsNullOrWhiteSpace(SearchQuery))
+            {
+                FilteredCustomers = new ObservableCollection<Customer>(Customers);
+                return;
+            }
+
+            var query = Customers.Where(c =>
+                c.CustomerFullName.Contains(SearchQuery, StringComparison.OrdinalIgnoreCase) ||
+                c.Telephone.Contains(SearchQuery) ||
+                c.EmailAddress.Contains(SearchQuery, StringComparison.OrdinalIgnoreCase) ||
+                c.CustomerBirthday.ToString().Contains(SearchQuery)
+            );
+
+            FilteredCustomers = new ObservableCollection<Customer>(query.ToList());
+        }
         public void SaveCustomer()
         {
 

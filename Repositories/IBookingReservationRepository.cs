@@ -16,5 +16,6 @@ namespace Repositories
         void Delete(int id);
         List<BookingReservation> GetAllReport(DateOnly startDate, DateOnly endDate);
         List<BookingReservation> GetPersonaleeReport(DateOnly startDate, DateOnly endDate);
+        BookingReservation GetBookingReservationById(int id);
     }
 }

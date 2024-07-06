@@ -84,12 +84,13 @@ namespace DataAccessLayer
             }
         }
 
-        public static void Delete(int id)
+        public static void Delete(int bookingReservationId, int roomId)
         {
             try
             {
                 using var context = new FuminiHotelManagementContext();
-                var bookingDetail = context.BookingDetails.FirstOrDefault(r => r.BookingReservationId == id || r.RoomId == id);
+                var bookingDetail = context.BookingDetails.FirstOrDefault(r => r.BookingReservationId == bookingReservationId 
+                                                                        && r.RoomId == roomId);
                 context.BookingDetails.Remove(bookingDetail);
                 context.SaveChanges();
             }
@@ -98,6 +99,8 @@ namespace DataAccessLayer
                 throw new Exception(ex.Message);
             }
         }
+
+        
     }
 
 }
