@@ -1,11 +1,6 @@
 ﻿using BusinessObjects;
 using Services;
 using Sevices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using WpfApp.ViewModels;
@@ -18,10 +13,20 @@ namespace WpfApp.Views
     public partial class PersonalReport : UserControl
     {
         ReportViewModel viewModel;
+        int CustomerId;
+
         public PersonalReport()
         {
             InitializeComponent();
-            viewModel = new ReportViewModel(new BookingReservationService(), new BookingDetailService(), 18);
+        }
+        public PersonalReport(int customerId)
+        {
+            CustomerId = customerId;
+            viewModel = new ReportViewModel(new BookingReservationService(), 
+                                            new BookingDetailService(), 
+                                            new CustomerService(),
+                                            new RoomInfomationService(),
+                                            CustomerId);
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

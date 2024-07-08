@@ -30,7 +30,7 @@ namespace WpfApp.Views
 
         private void btnUpdate_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            if(viewModel.CurrentBookingDetail.StartDate < viewModel.CurrentBookingDetail.EndDate)
+            if(viewModel.CurrentBookingDetail.StartDate > viewModel.CurrentBookingDetail.EndDate)
             {
                 bool? Result = new MessageBoxCustom("Start Date must before End Date", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
@@ -50,12 +50,16 @@ namespace WpfApp.Views
         {
             try
             {
+                BookingDetail bookingDetail = new BookingDetail(viewModel.CurrentBookingDetail.StartDate, viewModel.CurrentBookingDetail.EndDate);
+                decimal totalPrice = (viewModel.CurrentBookingDetail.Room.RoomPricePerDay ?? 0) * (viewModel.CurrentBookingDetail.EndDate.DayNumber - viewModel.CurrentBookingDetail.StartDate.DayNumber);
                 BookingReservation bookingReservation = new BookingReservation(
-                                                    viewModel.CurrentBookingReservation.BookingDate,
-                                                    viewModel.CurrentBookingReservation.TotalPrice,
-                                                    viewModel.CurrentBookingReservation.Customer,
-                                                    viewModel.CurrentBookingReservation.BookingStatus);
-                viewModel.SaveBookingReservation();
+                                                    viewModel.CurrentBookingDetail.BookingReservation.BookingDate,
+                                                    viewModel.CurrentBookingDetail.BookingReservation.TotalPrice,
+                                                    viewModel.CurrentBookingDetail.BookingReservation.Customer,
+                                                    viewModel.CurrentBookingDetail.BookingReservation.BookingStatus);
+                Customer customer = viewModel.CurrentBookingDetail.BookingReservation.Customer;
+                RoomInformation roomInformation = viewModel.CurrentBookingDetail.Room;
+                viewModel.SaveBookingDetail(bookingDetail, bookingReservation);
                 bool? Result = new MessageBoxCustom("Create Successfully", MessageType.Info, MessageButtons.Ok).ShowDialog();
             }
             catch (Exception ex)

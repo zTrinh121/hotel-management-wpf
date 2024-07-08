@@ -22,9 +22,10 @@ namespace WpfApp.ViewModels
         private readonly IRoomInfomationService roomInfomationService;
         private string searchQuery;
         private ObservableCollection<BookingDetail> filteredBookingDetails;
-
         private ObservableCollection<BookingReservation> bookingReservations;
         private ObservableCollection<BookingDetail> bookingDetails;
+        private ObservableCollection<RoomInformation> roomInformations;
+        private ObservableCollection<Customer> customers;         
         public ObservableCollection<string> Statuses { get; set; }
 
         public BookingReservationViewModel(IBookingReservationService bookingReservationService, 
@@ -41,15 +42,22 @@ namespace WpfApp.ViewModels
             Statuses = new ObservableCollection<string> { "Success", "Fail" };
             LoadBookingDetails();
             LoadBookingReservation();
+            LoadCustomers();
+            LoadRoomInformations();
         }
 
         public BookingReservation CurrentBookingReservation
         {
-            get { return currentBookingReservation; }
+            get 
+            {   
+                //ObservableCollection<RoomInformation> roomInformations = 
+                return currentBookingReservation;
+            }
             set
             {
                 currentBookingReservation = value;
                 OnPropertyChanged(nameof(CurrentBookingReservation));
+                OnPropertyChanged(nameof(CurrentBookingDetail.Room.RoomId));
             }
         }
 
@@ -94,6 +102,25 @@ namespace WpfApp.ViewModels
         {
             get
             {
+                //ObservableCollection<RoomInformation> roomInformations = RoomInformations;
+                //ObservableCollection<Customer> customers = Customers;
+                //foreach(var booking in BookingDetails)
+                //{
+                //    foreach(var customer in customers)
+                //    {
+                //        if(booking.BookingReservation.CustomerId == customer.CustomerId)
+                //        {
+                //            booking.BookingReservation.Customer = customer;
+                //        }
+                //    }
+                //    foreach(var room in roomInformations)
+                //    {
+                //        if(booking.RoomId == room.RoomId)
+                //        {
+                //            booking.RoomId = room.RoomId;
+                //        }
+                //    }
+                //}
                 return bookingDetails;
             }
             set
@@ -105,6 +132,8 @@ namespace WpfApp.ViewModels
 
         public void LoadBookingDetails()
         {
+            LoadCustomers(); 
+            LoadRoomInformations();
             var allBookingDetails = bookingDetailService.GetAll();
             BookingDetails = new ObservableCollection<BookingDetail>(allBookingDetails);
             foreach (var booking in BookingDetails)
@@ -113,7 +142,43 @@ namespace WpfApp.ViewModels
                 booking.BookingReservation = bookingReservationService.GetBookingReservationById(booking.BookingReservationId);
                 booking.BookingReservation.Customer = customerService.GetCustomerById(booking.BookingReservation.CustomerId);
             }
-            
+
+        }
+
+        public ObservableCollection<RoomInformation> RoomInformations
+        {
+            get
+            {
+                return roomInformations;
+            }
+            set
+            {
+                roomInformations = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public void LoadRoomInformations()
+        {
+            RoomInformations = new ObservableCollection<RoomInformation>(roomInfomationService.GetAll());
+        }
+
+        public ObservableCollection<Customer> Customers
+        {
+            get
+            {
+                return customers;
+            }
+            set
+            {
+                customers = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public void LoadCustomers()
+        {
+            Customers = new ObservableCollection<Customer>(customerService.GetAll());
         }
 
         public string SearchQuery
@@ -173,15 +238,14 @@ namespace WpfApp.ViewModels
             ResetInput();
         }
 
-        public void SaveBookingDetail()
+        public void SaveBookingDetail( BookingDetail bookingDetail, BookingReservation bookingReservation)
         {
-            var newBookingDetail = new BookingDetail
-            {
-                StartDate = CurrentBookingDetail.StartDate,
-                EndDate = CurrentBookingDetail.EndDate
+           
 
-            };
-            bookingDetails.Add(newBookingDetail);
+            bookingDetailService.Add(bookingDetail);
+            bookingReservationService.Add(bookingReservation);
+
+            LoadBookingDetails();
             LoadBookingReservation();
             ResetInput();
         }

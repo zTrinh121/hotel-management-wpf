@@ -17,11 +17,11 @@ namespace WpfApp
     public partial class CustomerWindow : Window
     {
         public int CustomerId;
-        public CustomerWindow()
+        public CustomerWindow(int customerId)
         {
             InitializeComponent();
             //CustomerId = customerId;
-            CustomerId = 18;
+            CustomerId = customerId;
         }
 
         private void AccountManagement_Clicked(object sender, RoutedEventArgs e)
@@ -31,7 +31,8 @@ namespace WpfApp
 
         private void Booking_Clicked(object sender, RoutedEventArgs e)
         {
-            DataContext = new ReportViewModel(new BookingReservationService(), new BookingDetailService(), 18);
+            Console.WriteLine(CustomerId);
+            DataContext = new ReportViewModel(new BookingReservationService(), new BookingDetailService(), new CustomerService(), new RoomInfomationService(), CustomerId);
         }
     }
 }

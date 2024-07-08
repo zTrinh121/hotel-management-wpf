@@ -58,8 +58,8 @@ namespace WpfApp.ViewModels
                     }
                     else
                     {
-                        //var customerWindown = new CustomerWindow(user.CustomerId);
-                        var customerWindown = new CustomerWindow();
+                        var customerWindown = new CustomerWindow(user.CustomerId);
+                        //var customerWindown = new CustomerWindow();
                         customerWindown.Show();
                     }
                     

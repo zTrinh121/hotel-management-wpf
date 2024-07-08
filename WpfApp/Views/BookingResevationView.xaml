@@ -51,7 +51,7 @@
 
             <Label x:Name="label1" Margin ="2,2,2,2"  Content="Booking Reservation ID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Foreground="Black"/>
             <TextBox x:Name="txtRoomID"
-              Text="{Binding CurrentBookingReservation.BookingReservationId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+              Text="{Binding CurrentBookingDetail.BookingReservationId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
               Margin ="4,4,4,4" Grid.Column="2" 
               Grid.Row="1" TextWrapping="Wrap" 
               Grid.ColumnSpan="2" 
@@ -62,10 +62,10 @@
                    Margin ="2,2,2,2" Grid.Column="0" 
                    Grid.Row="2" Content="Booking Date" 
                    Grid.ColumnSpan="2" Foreground="Black" />
-            <DatePicker x:Name="txtRoomNumber" Margin ="4,0,4,0" Grid.Column="2" 
+            <DatePicker x:Name="txtRoomNumber" Margin ="4,4,4,0" Grid.Column="2" 
               Grid.Row="2" 
                Text="{Binding CurrentBookingDetail.BookingReservation.BookingDate}"
-               Grid.ColumnSpan="2" Foreground="Black" FontSize="10" Height="22" />
+               Grid.ColumnSpan="2" Foreground="Black" FontSize="10" Height="22" VerticalAlignment="Top" />
 
             <Label x:Name="label2" 
                 Margin ="2,2,2,2" Grid.Column="0" 
@@ -77,11 +77,14 @@
            TextWrapping="Wrap" Grid.ColumnSpan="2" Foreground="Black" FontSize="10" />
 
             <Label x:Name="label8" Margin ="2,4,2,0" Content="Customer Name" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Foreground="Black"/>
-            <TextBox x:Name="txtMaxCapacity"  Margin ="4,4,4,4" 
+            <ComboBox x:Name="cboCustomers"  Margin ="3,26,5,0" 
                      Grid.Column="2" 
-              Text="{Binding CurrentBookingDetail.BookingReservation.Customer.CustomerFullName}"
-              Grid.Row="4"  TextWrapping="Wrap" Grid.ColumnSpan="2" 
-              Foreground="Black" />
+                      ItemsSource="{Binding Customers}"
+                      DisplayMemberPath="CustomerFullName"
+                        SelectedValuePath="CustomerId" 
+                      SelectedValue="{Binding CurrentBookingDetail.BookingReservation.Customer.CustomerId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                      Grid.Row="3"  Grid.ColumnSpan="2" 
+                      Foreground="Black" VerticalAlignment="Top" Height="32" Grid.RowSpan="2" />
 
             <Label x:Name="label3" Margin ="2,2,2,2"
                    Content="Booking Status" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Foreground="Black"/>
@@ -89,16 +92,19 @@
               Grid.Row="5" Grid.ColumnSpan="2" Foreground="Black"
               ItemsSource="{Binding Statuses}"
               SelectedItem="{Binding CurrentBookingDetail.BookingReservation.BookingStatus, Converter={StaticResource StatusConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-              FontSize="11" Height="22"/>
+              FontSize="11" Height="30"/>
 
             <Label x:Name="label4" Margin ="2,2,2,2" 
                    Content="Room Number" Grid.Column="0" 
                    Grid.Row="6" Grid.ColumnSpan="2" Foreground="Black"/>
-            <TextBox x:Name="txtRoomPrice" Margin ="4,2,4,6"  
+            <ComboBox x:Name="txtRoomPrice" Margin ="4,0,4,0"  
                Grid.Column="2" Grid.Row="6"  
-               Text="{Binding CurrentBookingDetail.Room.RoomNumber}"
-               TextWrapping="Wrap" Grid.ColumnSpan="2" 
-                     Foreground="Black" />
+                ItemsSource="{Binding RoomInformations}"
+                DisplayMemberPath="RoomNumber"
+                SelectedValuePath="RoomId" 
+                SelectedValue="{Binding CurrentBookingDetail.RoomId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                Grid.ColumnSpan="2" 
+                Foreground="Black" Height="27" />
 
             <Label x:Name="label11" Margin ="2,2,2,2" 
                     Content="Start Date" Grid.Column="0" 
@@ -137,7 +143,6 @@
                     <DataGridTextColumn Header="Total Price" Binding="{Binding BookingReservation.TotalPrice}"/>
                     <DataGridTextColumn Header="Customer Name" Binding="{Binding BookingReservation.Customer.CustomerFullName}"/>
                     <DataGridTextColumn Header="Booking Status" Binding="{Binding BookingReservation.BookingStatus, Converter={StaticResource StatusConverter}}"/>
-
                     <DataGridTextColumn Header="Room Number" Binding="{Binding Room.RoomNumber}"/>
                     <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}"/>
                     <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}"/>
@@ -146,7 +151,6 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Button  x:Name="btnCreate"
-                     IsEnabled="False"
               Content="Create" 
               HorizontalAlignment="Left" 
               Margin="29,5,0,3" 

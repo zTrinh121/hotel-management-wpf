@@ -102,6 +102,7 @@ namespace WpfApp.ViewModels
             };
             roomInfomationService.Add(newRoomInformation);
             LoadRoomInformations();
+            LoadRoomType();
             ResetInput();
         }
         
@@ -147,6 +148,7 @@ namespace WpfApp.ViewModels
         {
             roomInfomationService.Update(currentRoomInformation);
             LoadRoomInformations();
+            LoadRoomType();
             ResetInput();
         }
 
@@ -154,6 +156,7 @@ namespace WpfApp.ViewModels
         {
             roomInfomationService.Delete(currentRoomInformation.RoomId);
             LoadRoomInformations();
+            LoadRoomType();
             ResetInput();
         }
 
